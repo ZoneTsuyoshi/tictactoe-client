@@ -5,8 +5,13 @@ import { TicTacToe } from './game';
 // import { Board } from './board';
 
 const Board = ({ G, ctx, moves }) => {
-  if (!G || !ctx) return <div>Loading...</div>;
+  console.log('Board loaded');
+  console.log('G:', G);
+  console.log('ctx:', ctx);
+  console.log('moves:', moves);
   
+  if (!G || !ctx) return <div>Loading...</div>;
+
   return (
     <div>
       <h2>Player {ctx.currentPlayer}</h2>
